@@ -1,0 +1,23 @@
+<!-- <header class="app-header"> -->
+  <!-- Original
+  <img class="app-logo" src="img/logo-angular-branco.png" aria-hidden="true" />
+  <h1>Treinamento Angular {{1==1}}</h1> expression js => Interpolação
+  -->
+<!-- </header> -->
+
+  <!-- 2
+  <img class="app-logo" [src]="imgSrc" aria-hidden="true" />
+  <h1> {{titulo}}</h1>
+   -->
+  <!--
+  property Binding, é tratado como uma expressão JS, ex.: [src]
+  para fazer para atributo aria-hidden => [attr.aria-hidden]="true" mas para propriedade ela tem q existir no componente tipo o [src]
+  atributos vc pode criar os seus próprios
+  -->
+
+  <!-- 3
+  class.w-100 é do bootstrap que corresponde text-center w-100 na tradução
+  -->
+  <img [style.opacity]="opacidadeTitulo" class="app-logo" [src]="`img/logo-angular-${logoGradiente ? 'gradiente' : 'branco'}.png`" [attr.aria-hidden]="true" />
+
+  <h1 [class.w-100]="tituloCentralizado" [class]="{'text-center': tituloCentralizado}"> {{titulo}}</h1>
