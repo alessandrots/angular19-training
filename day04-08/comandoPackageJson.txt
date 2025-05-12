@@ -1,0 +1,1 @@
+ "api": "powershell -ExecutionPolicy Bypass -File ./json-server/api.ps1
