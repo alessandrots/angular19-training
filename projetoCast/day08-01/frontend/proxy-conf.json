@@ -1,0 +1,10 @@
+{
+  "/demo/api/": {
+    "target": "http://localhost:8080",
+    "secure": false
+  },
+  "/demo/logout": {
+    "target": "http://localhost:8080",
+    "secure": false
+  }
+}
